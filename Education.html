@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Education</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	  ::selection {background-color:green;color:black;}
+	  body { 
+			margin:auto;
+			background-color:black;
+			overflow:hidden;
+		 }
+	  #headermenu { text-align:center; }
+	  .hdrmnuitms {
+	      display:inline-block;
+	      background-color:black;
+	      width:19%;
+	      text-align:center;
+	      text-decoration:none;
+	      padding:7vh 0 2vh 0;
+	      font-family:monospace;
+	      font-size:40px;
+	  }
+	  .hdrmnuitms a {
+	  	 text-decoration:none;
+	  	 color:white;
+	  }
+	  #Projects {
+	     animation:showw 8s;
+	     cursor:pointer;
+	  }
+	  #Skills {
+	     animation:sklz 6s;
+	     cursor:pointer;
+	  }
+	  #Contact {
+	     animation:cntct 6s;
+	     cursor:pointer;
+	     color:white;
+	     border-right:solid 1px;
+	     border-image:linear-gradient(0deg, rgba(0,116,17,1) 0%, rgba(0,0,0,1) 40%);
+	  }
+	  #Abt {
+	     animation:Abt 6s;
+	     cursor:pointer;
+	  }
+	  #Education { 
+	  	 animation:Education 6s;
+	     cursor:pointer;
+		 background:linear-gradient(0deg, rgba(0,116,17,1) 0%, rgba(0,0,0,1) 40%); 
+	  }
+	  #Projects:hover {
+	  	 background:
+	  	 linear-gradient(0deg, rgba(0,116,17,1) 0%, rgba(0,0,0,1) 40%);
+	  }
+	  #Skills:hover {
+	  	 background:
+	  	 linear-gradient(0deg, rgba(0,116,17,1) 0%, rgba(0,0,0,1) 40%);
+	  }
+	  #Contact:hover {
+	  	 background:
+	  	 linear-gradient(0deg, rgba(0,116,17,1) 0%, rgba(0,0,0,1) 40%);
+	  }
+	  #Contacter {
+	  	 position:fixed;
+	  	 border:solid green 2.5px;
+	  	 width:70%;
+	  	 top:200px;
+	  	 margin-left:15%;
+	  	 text-align:center;
+	  	 padding-bottom:50px;
+	  	 background-color:black;
+	  	 display:none;
+	  	 z-index:1;
+	  }
+	  #Contacter a {
+	  	 margin-bottom:15px;
+	  	 display:block;
+	  	 text-decoration:none;
+	  	 color:white;
+	  }
+	  #tell {margin-top:50px;}
+	  #Exit { 
+	  	 float:right;
+	  	 margin:5px;
+	  }
+	  #Abt:hover {
+	  	 background:
+	  	 linear-gradient(0deg, rgba(0,116,17,1) 0%, rgba(0,0,0,1) 40%);
+	  }
+	  #Projects:hover {
+	  	 background:
+	  	 linear-gradient(0deg, rgba(0,116,17,1) 0%, rgba(0,0,0,1) 40%);
+	  }
+	  @keyframes showw {
+         0% {
+         	opacity:0;
+         }
+         50% {
+         	opacity:100%;
+         }
+	  }
+	  @keyframes sklz {
+	    	0% {
+	    		position:relative;
+	    		left:1000px;
+	    	}
+	    	50% {
+	    		position:relative;
+	    		left: 0px;
+	    	}
+	    }
+	  @keyframes cntct { 
+	      0% {
+	      	position:relative;
+	      	left:1500px;
+	      }
+	      50% {
+	      	position:relative;
+	      	left: 0px;
+	      }
+	  }
+	  @keyframes Abt {
+	  	 0% {
+	  	 	position:relative;
+	  	 	right:1500px;
+	  	 }
+	  	 50% {
+	  	 	position:relative;
+	  	 	right:0px;
+	  	 }
+	  }
+	  @keyframes Education {
+	  	 0% {
+	  	 	background:black;
+	  	 	position:relative;
+	  	 	right:1000px;
+	  	 }
+	  	 50% {
+	  	 	background:black;
+	  	 	position:relative;
+	  	 	right:0px;
+	  	 }
+	  }
+	  .hdrmnuitmsm {
+		   display:none;
+	       background-color:black;
+	       width:100%;
+	       text-align:center;
+	       text-decoration:none;
+	       padding:7vh 0 2vh 0;
+	       font-family:monospace;
+	       font-size:25px;
+	       color:white;
+	       cursor:pointer;
+	  }
+	  #Educationaa {
+	     	background:
+	     	linear-gradient(0deg, rgba(0,116,17,1) 0%, rgba(0,0,0,1) 40%);
+	  }
+
+	  .hdrmnuitmsm a {
+		 text-decoration:none;
+	  	 color:white;
+	   }
+	   .hdrmnuitmsm:hover {
+	     	background:
+	     	linear-gradient(0deg, rgba(0,116,17,1) 0%, rgba(0,0,0,1) 40%);
+	   }
+	  #mennu { display:none; }
+	  #hdrln {
+	  	 background-color:green;
+	  	 height:2px;  	
+	  	 animation: hdrln 1s;
+	  }
+	  @keyframes hdrln {
+  	  	 0% {
+  	  	 	margin:0 49.9%;
+  	  	 	} 
+  	  	 50% {
+  	  	 	margin:0;
+  	  	 }
+	  }
+	  #tk20 {border-bottom:solid green 4px;border-left:solid black 10px;border-right:solid black 10px;cursor:pointer;animation:tkk 6s;}
+	  #tk18 {border-bottom:solid green 4px;border-left:solid black 10px;border-right:solid black 10px;cursor:pointer;animation:tkkk 6s;}
+	  #tk15 {border-bottom:solid green 4px;border-left:solid black 10px;border-right:solid black 10px;cursor:pointer;animation:tkkkk 6s;}
+	  #tk20:hover{
+	  	 border-left:solid green 10px;
+	     border-right:solid green 10px;
+	     background-color:lightgreen;}
+	  #tk18:hover{
+	  	 border-left:solid green 10px;
+	     border-right:solid green 10px;
+	     background-color:lightgreen;
+	  }    
+	  #tk15:hover{
+	  	 border-left:solid green 10px;
+	     border-right:solid green 10px;
+	     background-color:lightgreen;
+	  } 
+	  #tk20  *{  
+	  	 display:inline-block;
+	  	 color:white;
+	  	 position:relative;
+	  	 margin:0;
+	  }
+	  #tk18  *{ 
+	  	 display:inline-block;
+	  	 color:white;
+	  	 position:relative;
+	  	 margin:0;
+	  }
+	  #tk15  *{ 
+	  	 display:inline-block;
+	  	 color:white;
+	  	 position:relative;
+	  	 margin:0;
+	  }
+	  @media  screen and (max-width:1197px) { #sga { display:none; } }
+	  @media  screen and (max-width:1135px) { .hdrmnuitms { font-size:35px; } }
+	  @media  screen and (max-width:1107px) { #Cchy { display:none; } }
+	  @media  screen and (max-width:974px) { .hdrmnuitms { font-size:30px; } }
+	  @media  screen and (max-width:912px) { 
+	  	 body { overflow-y:scroll; }
+	  	 .hdrmnuitms { font-size:25px; }
+	  }
+	  @media  screen and (max-width:880px) { #CRPTAA { display:none; } }
+	  @media  screen and (max-width:724px) { .hdrmnuitms { font-size:24px; } }
+	  @media  screen and (max-width:695px) {
+	     .hdrmnuitms { display:none; }
+	     #mennu {
+	      display:inline-block;
+	      width:100%;}
+	     #mennu:hover { 
+	     	background:
+	     	linear-gradient(0deg, rgba(0,116,17,1) 0%, rgba(0,0,0,1) 40%);
+	     	cursor:pointer;
+	     }
+	  }
+	  @media  screen and (max-height:500px) { 
+	  	#CRPTAA {height:110px;} 
+	  }
+	  #tk20 img {width:300px;float:right;}
+	  #tk18 img {width:150px;float:right;}
+	  #tk15 img {width:100px;float:right;}
+
+	  @keyframes tkk {
+	     0%  {opacity:0;}
+	     50% {opacity:0;}
+	     60% {opacity:100%;}
+	  }
+	  @keyframes tkkk {
+	     0%  {opacity:0;}
+	     52% {opacity:0;}
+	     62% {opacity:100%;}
+	  }
+	  @keyframes tkkkk {
+	     0%  {opacity:0;}
+	     54% {opacity:0;}
+	     64% {opacity:100%;}
+	  }
+	</style>
+	<script>
+		function drp() {
+			document.getElementById('Abtaa').style.display='inline-block';
+			document.getElementById('Educationaa').style.display='inline-block';
+			document.getElementById('Projectsaa').style.display='inline-block';
+			document.getElementById('Skillsaa').style.display='inline-block';
+			document.getElementById('Contacta').style.display='inline-block';
+			document.getElementById('mennu').setAttribute('onclick','up()');
+		}
+		function up() {
+			document.getElementById('Abtaa').style.display='none';
+			document.getElementById('Educationaa').style.display='none';
+			document.getElementById('Projectsaa').style.display='none';
+			document.getElementById('Skillsaa').style.display='none';
+			document.getElementById('Contacta').style.display='none';
+			document.getElementById('mennu').setAttribute('onclick','drp()');
+		}
+		function chksize() {
+			cmptvh();
+			if (window.innerWidth>695) {
+			 document.getElementById('Abtaa').style.display='none';
+			 document.getElementById('Educationaa').style.display='none';
+			 document.getElementById('Projectsaa').style.display='none';
+			 document.getElementById('Skillsaa').style.display='none';
+			 document.getElementById('Contacta').style.display='none';
+			}			
+		}
+		function cntctcls() {document.getElementById('Contacter').style.display='none';}
+		function shwcntct() {document.getElementById('Contacter').style.display='block';}
+		function cmptvh() { 
+			var  cc = document.documentElement.clientHeight;
+			var mm = document.getElementById('headermenu').clientHeight;
+			var gg = cc - mm -2;
+			var ee =(gg/3)-4;
+			var ccc1 =document.getElementById('ref1').clientHeight;
+			var ccc2 =document.getElementById('ref2').clientHeight;
+			var ccc3 =document.getElementById('ref3').clientHeight;
+			var sga =document.getElementById('sga').clientHeight;
+			var Cchy =document.getElementById('Cchy').clientHeight;
+			var CRPTAA =document.getElementById('CRPTAA').clientHeight;
+			document.getElementById('edctn').style.height=gg+'px';
+			document.getElementById('tk20').style.height=ee+'px';
+			document.getElementById('tk18').style.height=ee+'px';
+			document.getElementById('tk15').style.height=ee+'px';
+			document.getElementById('ref1').style.top=(ee/2)-(ccc1/2)+'px';
+			document.getElementById('ref2').style.top=(ee/2)-(ccc2/2)+'px';
+			document.getElementById('ref3').style.top=(ee/2)-(ccc3/2)+'px';
+			document.getElementById('sga').style.top=(ee/2)-(sga/2)+'px';
+			document.getElementById('Cchy').style.top=(ee/2)-(Cchy/2)+'px';
+			document.getElementById('CRPTAA').style.top=(ee/2)-(CRPTAA/2)+'px';
+		}
+	</script>
+</head>
+<body onresize="chksize()" onload="cmptvh()">
+	<div id="headermenu">
+		<div class="hdrmnuitms" id="Abt" onclick="document.getElementById('Abta').click()"><a href="porte.html" id="Abta">About</a></div>
+		<div class="hdrmnuitms" id="Education" onclick="document.getElementById('Educationa').click()"><a href="Education.html" id="Educationa">Education</a></div>
+		<div class="hdrmnuitms" id="Projects" onclick="document.getElementById('Projectsa').click()"><a href="Projects.html" id="Projectsa">Projects</a></div>
+		<div class="hdrmnuitms" id="Skills" onclick="document.getElementById('Skillsa').click()"><a href="Skills.html" id="Skillsa">Skills</a></div>
+		<div class="hdrmnuitms" id="Contact" onclick="shwcntct()">Contact</div>
+		<div class="hdrmnuitmsm" id="Abtaa" onclick="document.getElementById('Abta').click()">About</div>
+		<div class="hdrmnuitmsm" id="Educationaa" onclick="document.getElementById('Educationa').click()">Education</div>
+		<div class="hdrmnuitmsm" id="Projectsaa" onclick="document.getElementById('Projectsa').click()">Projects</div>
+		<div class="hdrmnuitmsm" id="Skillsaa" onclick="document.getElementById('Skillsa').click()">Skills</div>
+		<div class="hdrmnuitmsm" id="Contacta" onclick="shwcntct()">Contact</div>
+		<div id="mennu" class="hdrmnuitms"  onclick="drp()"><a>Menu</a></div>
+	</div>
+	<div id="hdrln" ></div>
+	<div id="Contacter">
+		<a id="Exit" href="javascript:cntctcls()">[X]</a>
+		<a id='tell' href="tel:+212773647474">Tel: +212773647474</a>
+		<a href="mailto:allahwetrust11111@gmail.com">E-mail: allahwetrust11111@gmail.com</a>
+	</div>
+	<div id="edctn" onclick="cntctcls()">
+		  <div id="tk20" >
+		  	<div id="ref1">
+		     <h1 >2020 | </h1>
+		     <h1 >I<span style="color:red;">S</span>GA-Fes | </h1>
+		     <h2>Bachelor +3 in Computer And Electronic Systems Engineering</h2>
+		    </div>
+		    <img id='sga' src="ISGA.png" alt="ISGA-Logo">
+  		  </div>
+  		  <div id="tk18" >
+		  	<div id="ref2">
+  		     <h1>2018 | </h1>
+  		     <h1 >CPGE Alchachy-Fes | </h1>
+		     <h2 >Bachelor +1 in Maths,Physics & Engineering Sciences</h2>
+		    </div>
+		    <img id="Cchy" src="AlCachy.png" alt="Cachy-Logo">
+  		  </div>
+  		  <div id="tk15">
+		  	<div id="ref3">
+  		     <h1>2015 | </h1>
+  		     <h1>CRPTA-Marrakech | </h1>
+		     <h2>Bachelor in Math Sciences (Type-B)</h2>
+		    </div>
+		    <img id="CRPTAA" src="CRPTA.png" alt="CRPTA-Logo">
+  		</div>
+	</div>
+</body>
+</html>

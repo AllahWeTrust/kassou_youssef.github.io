@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<style>
+	  ::selection {background-color:green;color:black;}
+	  body { 
+			margin:auto;
+			background-color:black;
+			overflow-x:hidden;
+		 }
+	  #headermenu { text-align:center; }
+	  .hdrmnuitms {
+	       display:inline-block;
+	       background-color:black;
+	       width:19%;
+	       text-align:center;
+	       text-decoration:none;
+	       padding:7vh 0 2vh 0;
+	       font-family:monospace;
+	       font-size:40px;
+	  }
+	  .hdrmnuitms a {
+	  	 text-decoration:none;
+	  	 color:white;
+	  }
+	  #Projects {
+	     animation:showw 4s;
+	     cursor:pointer;
+	  }
+	  #Skills {
+	     animation:sklz 3s;
+	     cursor:pointer;
+	  }
+	  #Contact {
+	     animation:cntct 3s;
+	     cursor:pointer;
+	     color:white;
+	     border-right:solid 1px;
+	     border-image:linear-gradient(0deg, rgba(0,116,17,1) 0%, rgba(0,0,0,1) 40%);
+	  }
+	  #Abt {
+	     animation:Abt 5s;
+	     cursor:pointer;
+	  	 background:
+	  	 linear-gradient(0deg, rgba(0,116,17,1) 0%, rgba(0,0,0,1) 40%);
+	  }
+	  #Education { 
+	  	 animation:Education 3s;
+	     cursor:pointer; 
+	  }
+	  #Projects:hover {
+	  	 background:
+	  	 linear-gradient(0deg, rgba(0,116,17,1) 0%, rgba(0,0,0,1) 40%);
+	  }
+	  #Skills:hover {
+	  	 background:
+	  	 linear-gradient(0deg, rgba(0,116,17,1) 0%, rgba(0,0,0,1) 40%);
+	  }
+	  #Contact:hover {
+	  	 background:
+	  	 linear-gradient(0deg, rgba(0,116,17,1) 0%, rgba(0,0,0,1) 40%);
+	  }
+	  #Contacter {
+	  	position:fixed;
+	  	border:solid green 2.5px;
+	  	width:70%;
+	  	top:200px;
+	  	margin-left:15%;
+	  	text-align:center;
+	  	padding-bottom:50px;
+	  	background-color:black;
+	  	display:none;
+	  }
+	  #Contacter a {
+	  	margin-bottom:15px;
+	  	display:block;
+	  	text-decoration:none;
+	  	color:white;
+	  }
+	  #tell {margin-top:50px;}
+	  #Education:hover {
+	  	 background:
+	  	 linear-gradient(0deg, rgba(0,116,17,1) 0%, rgba(0,0,0,1) 40%);
+	  }
+	  #Projects:hover {
+	  	 background:
+	  	 linear-gradient(0deg, rgba(0,116,17,1) 0%, rgba(0,0,0,1) 40%);
+	  }
+	  @keyframes showw {
+         0% {
+         	opacity:0;
+         }
+         100% {
+         	opacity:100%;
+         }
+	  }
+	  @keyframes sklz {
+	    	0% {
+	    		position:relative;
+	    		left:1000px;
+	    	}
+	    	100% {
+	    		position:relative;
+	    		left: 0px;
+	    	}
+	    }
+	  @keyframes cntct { 
+	      0% {
+	      	position:relative;
+	      	left:1500px;
+	      }
+	      100% {
+	      	position:relative;
+	      	left: 0px;
+	      }
+	  }
+	  @keyframes Abt {
+	  	 0% {
+	  	 	position:relative;
+	  	 	right:1500px;
+	  	 }
+	  	 98% {background:black;}
+	  	 100% {
+	  	 	position:relative;
+	  	 	right:0px;
+	  	 }
+	  }
+	  @keyframes Education {
+	  	 0% {
+	  	 	position:relative;
+	  	 	right:1000px;
+	  	 }
+	  	 100% {
+	  	 	position:relative;
+	  	 	right:0px;
+	  	 }
+	  }
+	  .hdrmnuitmsm {
+		   display:none;
+	       background-color:black;
+	       width:100%;
+	       text-align:center;
+	       text-decoration:none;
+	       padding:7vh 0 2vh 0;
+	       font-family:monospace;
+	       font-size:25px;
+	       color:white;
+	       cursor:pointer;
+	  }
+	  #Abtaa {
+	     	background:
+	     	linear-gradient(0deg, rgba(0,116,17,1) 0%, rgba(0,0,0,1) 40%);
+	  }
+	  .hdrmnuitmsm a { text-decoration:none;color:white; }
+	   .hdrmnuitmsm:hover {
+	     	background:
+	     	linear-gradient(0deg, rgba(0,116,17,1) 0%, rgba(0,0,0,1) 40%);
+	   }
+	  #mennu { display:none; }
+	  #hdrln {
+	  	 background-color:green;
+	  	 height:2px;  	
+	  	 animation: hdrln 1s;
+	  }
+	  @keyframes hdrln {
+  	  	 0% {
+  	  	 	margin:0 49.9%;
+  	  	 	} 
+  	  	 100% {
+  	  	 	margin:0;
+  	  	 	overflow:hi
+  	  	 }
+	  }
+	  #Abtdivr {
+ 	  	 width:50%;
+ 		 float:left;
+ 		 text-align:center;
+	  }
+	  #Abtdivr img {
+	  	 margin-top:20%;
+	  	 animation:shwimg 5s ;
+	  	 width:100%;
+	  }
+	  @keyframes shwimg {
+	    	0%	{
+		  	position:relative;
+	    	right:1000px;
+	    	}
+	    	96.5% {
+	    		position:relative;
+	    		right:1000px;
+	    	}
+	    	98% {
+	    		position:relative;
+	    		right:0;
+	    	}
+	  }
+	  #Abtdivl {
+    	  width:50%;
+          float:right;
+	  }
+	  #nm {
+ 	  	   color:white ;
+ 	  	   margin-left:10%;
+ 	  	   font-size:60px;
+ 	  	   margin-bottom:0;
+ 	  	   margin-top:5%;
+	  }
+	  #prn {
+	  	  color:white;
+	  	  margin-left:15%;
+	  	  margin-top:0;
+	  	  font-size:60px;
+	  	  margin-bottom:0;
+	  	  animation: prnn 5s;
+	  }
+	  #Abtdivl p {
+	  	  color:white;
+	  	  margin-top:0;
+	  	  font-size:22px;
+	      animation: prndsc 5s;
+	  }
+	  #parra:before {
+	  	content:"";
+	  	border-top:solid green 8px;
+	  	border-left:solid green 8px;
+	  	width:40px;
+	  	height:40px;
+	  	margin:-15px;
+	  	position:absolute;
+	  }
+	  #parra { 
+	  	 margin-left:35%;
+	     margin-right:5%;
+	     margin-top:10px;
+	     animation: borderr 5s;
+	  }
+	  #parra p { margin-bottom:-40px; }
+	  #parra:after {
+	  	content:"";
+	  	float:right;
+	  	border-bottom:solid green 8px;
+	  	border-right:solid green 8px;
+	  	width:40px;
+	  	height:40px;
+	  	margin-right:-10px;
+	  	margin-top:1px;
+	  }
+	  #Exit { 
+	  	float:right;
+	  	margin:5px;
+	  }
+	  #kk { 
+	  	  animation:wrtk  5s;
+	  	  letter-spacing:-18px;
+	  	 }
+	  #aa { 
+	  	  animation:wrta 5s;
+	  	  letter-spacing:-18px;
+	  	 }
+	  #s1 { 
+	  	  animation:wrts  5s;
+	  	  letter-spacing:-18px;
+	  	 }
+	  #s2 { 
+	  	  animation:wrtss  5s;
+	  	  letter-spacing:-18px;
+	  	 }
+	  #oo { 
+	  	  animation:wrto  5s;
+	  	  letter-spacing:-18px;
+	  	 }
+	  #uu { animation:wrtu  5s; }
+	  @keyframes wrtk {
+	  	  0% {opacity:0;}
+	  	  61% {opacity:0;}
+	  	  62% {opacity:100%;border-right:solid green 8px;padding-right:1vw;}
+	  	  63%{padding-right:0;border:none;}
+	  }
+	  @keyframes wrta {
+	  	 0% {opacity:0;}
+	  	 64% {opacity:0;}
+	  	 65% {opacity:100%;border-right:solid green 8px;padding-right:1vw;}
+	  	 66% {border:none;padding-right:0;}	
+	  }
+	  @keyframes wrts {
+	  	 0% {opacity:0;}
+	  	 67% {opacity:0;}
+	  	 68% {opacity:100%;border-right:solid green 8px;padding-right:1vw;}
+	  	 69% {border:none;padding-right:0;}	 	
+	  }
+	  @keyframes wrtss {
+	  	 0% {opacity:0;}
+	  	 70% {opacity:0;}
+	  	 71% {opacity:100%;border-right:solid green 8px;padding-right:1vw;}
+	  	 72% {border:none;padding-right:0;}	  	
+	  }
+	  @keyframes wrto {
+	  	 0% {opacity:0;}
+	  	 73% {opacity:0;}
+	  	 74% {opacity:100%;border-right:solid green 8px;padding-right:1vw;}
+	  	 75% {border:none;padding-right:0;}
+	  }
+	  @keyframes wrtu {
+ 	  	  0% {opacity:0;}
+ 	  	  76% {opacity:0;}
+ 	  	  77% {opacity:100%;border-right:solid green 8px;}
+ 	  	  77.9% {opacity:100%;border-right:solid green 8px;}
+ 	  	  78% {border:none;padding-right:0;}
+ 	  	  79% {padding-right:2vw;}
+ 	  	  80% {border-right:solid green 8px;padding-right:2vw;}
+ 	  	  81% {border-right:none;padding-right:2vw;}
+ 	  	  82% {border-right:solid green 8px;padding-right:2vw;}
+ 	  	  83% {border-right:none;padding-right:2vw;}
+ 	  	  84% {border-right:solid green 8px;padding-right:2vw;}
+ 	  	  85% {border-right:none;padding-right:2vw;}
+	  }
+	  @keyframes prnn {
+ 	  	  0%{position:relative;left:1000px;}
+ 	  	  86% {position:relative;left:1000px;}
+ 	  	  90% {position:relative;left:0;}
+	  }
+	  @keyframes prndsc {
+	  	 0% {position:relative;left:1000px;}
+	  	 91% {position:relative;left:1000px;}
+	  	 96% {position:relative;left:0;}
+	  }
+	  @keyframes borderr { 
+	  	0% { opacity:0; }
+	  	92% { opacity:0; }
+	  	93% { opacity:100%; }
+	  	100% {opacity:100%;  }
+	  }
+	  @media  screen and (max-width:1200px) {
+	  	 #Abtdivr img {
+	  	 	margin-top:20%;
+	  	 }
+	  }
+	  @media  screen and (max-width:1135px) {
+	  	 .hdrmnuitms {
+	  	 	font-size:35px;
+	  	 }
+	  	 #Abtdivr img { margin-top:25%; }
+	  }
+	  @media  screen and (max-width:1127px) { #Abtdivl p  { font-size:21.5px; } }
+	  @media  screen and (max-width:1035px) {#Abtdivl p  { font-size:20px; } }
+	  @media  screen and (max-width:974px) {
+	  	 .hdrmnuitms { font-size:30px; }
+	  	 #Abtdivr img { margin-top:30%; }
+	  }
+	  @media  screen and (max-width:912px) {
+	  	 .hdrmnuitms { font-size:25px; }
+	  	 #Abtdivr img { margin-top:0; }
+	  	 #Abtdivr { width:100%;text-align:center; }
+	  	 #Abtdivl { width:100%; }
+	  	 #Abtdivl p  { font-size:22px; } 
+	  	 body {overflow-y:scroll;}
+	  }
+	  @media  screen and (max-width:724px) { .hdrmnuitms { font-size:24px; } }
+	  @media  screen and (max-width:695px) {
+	     .hdrmnuitms { display:none; }
+	     #mennu {
+	      display:inline-block;
+	      width:100%;}
+	     #mennu:hover { 
+	     	background:
+	     	linear-gradient(0deg, rgba(0,116,17,1) 0%, rgba(0,0,0,1) 40%);
+	     	cursor:pointer;
+	     }
+	  }
+
+	</style>
+	<script>
+		function drp() {
+			document.getElementById('Abtaa').style.display='inline-block';
+			document.getElementById('Educationaa').style.display='inline-block';
+			document.getElementById('Projectsaa').style.display='inline-block';
+			document.getElementById('Skillsaa').style.display='inline-block';
+			document.getElementById('Contacta').style.display='inline-block';
+			document.getElementById('mennu').setAttribute('onclick','up()');
+		}
+		function up() {
+			document.getElementById('Abtaa').style.display='none';
+			document.getElementById('Educationaa').style.display='none';
+			document.getElementById('Projectsaa').style.display='none';
+			document.getElementById('Skillsaa').style.display='none';
+			document.getElementById('Contacta').style.display='none';
+			document.getElementById('mennu').setAttribute('onclick','drp()');
+		}
+		function chksize() {
+			if (window.outerWidth>695) {
+			 document.getElementById('Abtaa').style.display='none';
+			 document.getElementById('Educationaa').style.display='none';
+			 document.getElementById('Projectsaa').style.display='none';
+			 document.getElementById('Skillsaa').style.display='none';
+			 document.getElementById('Contacta').style.display='none';
+			}			
+		}
+		function cntctcls() { document.getElementById('Contacter').style.display='none';}
+		function shwcntct() {document.getElementById('Contacter').style.display='block';}
+	</script>
+</head>
+<body onresize="chksize()">
+	<div id="headermenu">
+		<div class="hdrmnuitms" id="Abt" onclick="document.getElementById('Abta').click()"><a href="porte.html" id="Abta">About</a></div>
+		<div class="hdrmnuitms" id="Education" onclick="document.getElementById('Educationa').click()"><a href="Education.html" id="Educationa">Education</a></div>
+		<div class="hdrmnuitms" id="Projects" onclick="document.getElementById('Projectsa').click()"><a href="Projects.html" id="Projectsa">Projects</a></div>
+		<div class="hdrmnuitms" id="Skills" onclick="document.getElementById('Skillsa').click()"><a href="Skills.html" id="Skillsa">Skills</a></div>
+		<div class="hdrmnuitms" id="Contact" onclick="shwcntct()">Contact</div>
+		<div class="hdrmnuitmsm" id="Abtaa" onclick="document.getElementById('Abta').click()">About</div>
+		<div class="hdrmnuitmsm" id="Educationaa" onclick="document.getElementById('Educationa').click()">Education</div>
+		<div class="hdrmnuitmsm" id="Projectsaa" onclick="document.getElementById('Projectsa').click()">Projects</div>
+		<div class="hdrmnuitmsm" id="Skillsaa" onclick="document.getElementById('Skillsa').click()">Skills</div>
+		<div class="hdrmnuitmsm" id="Contacta" onclick="shwcntct()">Contact</div>
+		<div id="mennu" class="hdrmnuitms"  onclick="drp()"><a>Menu</a></div>
+	</div>
+	<div id="hdrln" ></div>
+	<div id="Abtdiv" onclick="cntctcls()">
+		<div id="Abtdivl">
+			<h1 id="nm">
+				<span id="kk">K</span>
+				<span id="aa">A</span>
+				<span id="s1">S</span>
+				<span id="s2">S</span>
+				<span id="oo">O</span>
+				<span id="uu">U</span>
+			</h1>
+			<h1 id="prn">YOUSSEF</h1>
+			<div id="parra">
+			 <p >Full Stack Developer with 1 year of experience in designing and programming both the Front and Back End to produce a
+     			flexible , amusing ,friendly user experience and efficient data processing especially in the field of website development with
+     			the capability of exploiting the acquired skills in both mobile and desktop software engineering with a quick adaptation
+     			whatever the situation .
+     			Very passionate about computer sciences , Information technology ,cybersecurity and problem-solving.
+	 		 </p>
+			</div>
+		</div>
+		<div id="Abtdivr"><img src="Webdev.gif">
+		</div>
+	</div>
+	<div id="Contacter">
+		<a id="Exit" href="javascript:cntctcls()">[X]</a>
+		<a id='tell' href="tel:+212773647474">Tel: +212773647474</a>
+		<a href="mailto:allahwetrust11111@gmail.com">E-mail: allahwetrust11111@gmail.com</a>
+	</div>
+</body>
+</html>
